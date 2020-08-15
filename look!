@@ -1,0 +1,42 @@
+friend = "Maximus"
+
+# индексы
+first_letter = friend [0]
+print('First letter of frieds name is', first_letter)
+
+second_letter = friend [1]
+print('Second letter of frieds name is', second_letter)
+
+# отрицательный индекс считается от нуля - первого индекса
+# в этом примере [0] = M, значит [-1] = s, [-2] = u
+
+negative_index = friend[-2]
+print('It is letter', negative_index)
+
+# срезы
+    # срез со второго индекса по пятый
+print(friend[2:5])
+    # срез с нулевого индекса по третий
+print(friend[:3])
+    # срез с третьего индекса по последний
+print(friend[3:])
+
+# методы
+friends = 'Maximus Sarah'
+print(friends)
+
+    # длина строки (в кол-ве символов)
+print(len(friends))
+
+    # разбить строку через пробел на список. Если список записан через ;, то нужно указывать (';')
+print(friends.split())
+
+    # строка состоит из чисел. output - True/False
+print(friends.isdigit())
+
+    # ВЕРХНИЙ РЕГИСТР для всей строки
+print(friends.upper())
+    # нижний регистр для всей строки
+print(friends.lower())
+    # найти подстроку (output = индекс, на котором нашлась.если такой нет, output = -1)
+print(friends.find('1mus'))
